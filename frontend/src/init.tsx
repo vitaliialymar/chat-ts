@@ -15,6 +15,7 @@ const app = async () => {
     .use(initReactI18next)
     .init({
       lng: 'ru',
+      supportedLngs: ["ru", "en"],
       debug: false,
       resources,
     });

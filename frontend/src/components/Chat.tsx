@@ -91,7 +91,7 @@ const Chat = () => {
                   ref={inputRef}
                   name="body"
                   aria-label="Новое сообщение"
-                  placeholder="Введите сообщение..."
+                  placeholder={t('chat.placeholder')!}
                   className="border-0 p-0 ps-2"
                 />
                 <Button onClick={sendMessageHandler} type="submit" variant="outline-light" disabled={!message.length} className="text-secondary btn-group-vertical">
