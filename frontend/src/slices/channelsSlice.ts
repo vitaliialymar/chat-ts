@@ -49,9 +49,6 @@ const channelsSlice = createSlice({
   name: 'data',
   initialState,
   reducers: {
-    // removeError: (state) => {
-    //   state.error = null;
-    // },
     changeChannel: (state, { payload }: PayloadAction<number>) => {
       state.currentChannelId = payload;
     },
@@ -78,9 +75,6 @@ const channelsSlice = createSlice({
         state.channels = payload.channels;
         state.currentChannelId = payload.currentChannelId;
       })
-      // .addCase(fetchDatas.rejected, (state, { error }) => {
-      //   state.error = error.message;
-      // });
   },
 });
 

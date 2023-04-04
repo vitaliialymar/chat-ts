@@ -5,7 +5,6 @@ export interface IAuthContext {
     logIn: () => void,
     logOut: () => void,
     getUsername: () => string,
-    // getAuthHeader: () => {},
     loggedIn: boolean,
   }
 
@@ -14,7 +13,6 @@ const AuthContext = createContext<IAuthContext>({
     logIn: () => {},
     logOut: () => {},
     getUsername: () => { return ''},
-    // getAuthHeader: () => { return {}},
     loggedIn: !!localStorage.getItem('token'),
 });
 

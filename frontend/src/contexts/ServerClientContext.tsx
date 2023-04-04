@@ -1,5 +1,4 @@
 import { createContext } from 'react';
-// import { Modal } from '../slices/modalsSlice';
 
 export type Channel = {
   id?: number,
